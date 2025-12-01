@@ -1,12 +1,4 @@
-# LeetCode Python Solutions
 
-This repository contains my Python solutions to LeetCode problems, 
-organized by pattern (arrays, two pointers, sliding window, hashmaps, stacks).
-
-Each file includes:
-- Problem number
-- Pattern used
-- Time & space complexity
-- Clean, readable implementation
-
-Goal: Strengthen problem-solving skills
+### 🔹 [leetcode-python](https://github.com/varshavamanmurthy-bot/leetcode-python)  
+Well-structured Python solutions to algorithmic problems, organized by patterns such as two pointers, sliding window, and hashmaps.  
+**Tech:** Python · Algorithms · Data Structures  
