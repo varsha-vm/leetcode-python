@@ -1,0 +1,19 @@
+class Solution:
+    def helper(self, n):
+        output = 0
+        while n:
+            output += (n%10)**2
+            n//=10
+        return output
+
+    def isHappy(self, n: int) -> bool:
+        hashset = set()
+
+        while n not in hashset:
+            if n == 1:
+                return True
+                
+            hashset.add(n)
+            n = self.helper(n)
+
+        return False
