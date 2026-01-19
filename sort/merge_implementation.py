@@ -2,7 +2,7 @@
 #Time: O(N log N)
 #Space: O(N)
 
-def merge_sort(list1, list2):
+def merge(list1, list2):
     l = 0
     r = 0
     res = []
@@ -31,5 +31,17 @@ def merge_sort(list1, list2):
 
     return res
 
+
+#To recursively split the list into two sorted list, which is futher fed into merge() to sort and merge.
+def merge_sort(mylist):
+    if len(mylist) == 1:
+        return mylist 
         
-merge_sort([1,3,5,7,9],[0,2,4,6,8])
+    mid = len(mylist)//2
+    left_elms = merge_sort(mylist[:mid])
+    right_elms = merge_sort(mylist[mid:])
+
+    return merge(left_elms, right_elms)
+
+
+merge_sort([2,10,22,8,12,5,1,99,3])
