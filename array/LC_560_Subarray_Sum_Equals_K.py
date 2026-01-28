@@ -1,6 +1,8 @@
 #Approach use hashmap to store all cumulative seen + initialize hashmap with 0:1
 #Time:O(N)
 #Space:O(N)
+
+
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
         hashmap = {0:1}
